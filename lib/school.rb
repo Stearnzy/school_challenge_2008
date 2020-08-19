@@ -32,6 +32,8 @@ class School
     if end_time.to_i > 12
       @time_difference = @ending_time.to_i - 12
       "#{@time_difference}:00"
+    else
+      "#{@ending_time}:00"
     end
   end
 end
